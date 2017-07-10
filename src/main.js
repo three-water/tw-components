@@ -3,9 +3,8 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
-import TwComponents from '../packages/index.js'
+import TwComponents from '../lib/index.js'
 
-console.log(TwComponents)
 Vue.use(ElementUI)
 Vue.use(TwComponents)
 

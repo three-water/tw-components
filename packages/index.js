@@ -15,3 +15,7 @@ export default {
   install,
   TwTable
 }
+
+// module.exports = {
+//   aaaa: 1111
+// }

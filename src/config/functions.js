@@ -5,7 +5,7 @@ function post (action, params) {
   if (lgetItem(Vue.TOKEN_KEY)) {
     Vue.http.headers.post['token'] = lgetItem(Vue.TOKEN_KEY)
   }
-  return Vue.http.post(action, params).then((response) => response.json(), (error) => {
+  return Vue.http.get(action, params).then((response) => response.json(), (error) => {
     console.log(error)
     return error
   })

@@ -33,7 +33,7 @@ export default {
         hospitalId: ''
       },
       hospital: [],
-      url: 'user/list',
+      url: '../mock/table-date.json',
       columns: [
         {
           label: ' ',
@@ -67,13 +67,13 @@ export default {
     }
   },
   methods: {
-    getHospitalList () {
-      this.$post('hospital/list').then(res => {
-        if (res.status === 1) {
-          this.hospital = res.data
-        }
-      })
-    },
+    // getHospitalList () {
+    //   this.$post('hospital/list').then(res => {
+    //     if (res.status === 1) {
+    //       this.hospital = res.data
+    //     }
+    //   })
+    // },
     selection (val) {
       console.log(val)
     },
@@ -83,7 +83,7 @@ export default {
   },
   mounted () {
     console.log(222)
-    this.getHospitalList()
+    // this.getHospitalList()
   }
 }
 </script>

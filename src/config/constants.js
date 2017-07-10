@@ -5,7 +5,7 @@ import * as functions from './functions'
 // const HOST_SITE = 'http://bucczhjb.com/ws'
 // const HOST_SITE = 'http://xuqing.s1.natapp.cc/ws'
 // const HOST_SITE = 'http://192.168.199.108:6060/ws'
-const HOST_SITE = process.env.NODE_ENV === 'production' ? 'http://101.37.29.108:6060/ws' : 'http://192.168.199.108:6060/ws'
+const HOST_SITE = process.env.NODE_ENV === 'production' ? 'http://101.37.29.108:6060/ws' : 'http://localhost:8082'
 
 // 微信帐号相关常量
 const WECHAT_CALLBACK = 'http://nutrition.natapp1.cc/'
